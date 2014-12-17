@@ -1,0 +1,3 @@
+<%=
+  raw(render_with_layout(@meta_data, block_given? ? MultiJson.decode(yield) : nil))
+%>
