@@ -1,7 +1,5 @@
 # Unified Message DSL
 
-[![Build Status](https://travis-ci.org/strikingly/message_dsl.png?branch=master)](https://travis-ci.org/strikingly/message_dsl)
-
 A DSL that unifies the message format of RESTful API responses and job results.
 
 ## Get started
