@@ -17,7 +17,7 @@ module MessageDsl::RestApi
       :formats => [:json]
     }.merge(options)
     if @meta_data.valid?
-      render default_options.merge(options) and return
+      render default_options.merge(options)
     else
       raise "One of userMessage.i18n or userMessage.plain should be present"
     end
