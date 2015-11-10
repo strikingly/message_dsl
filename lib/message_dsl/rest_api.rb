@@ -5,7 +5,7 @@ module MessageDsl
     include MessageDsl::Share::Layout
 
     def render_json_response(status, options={}, &block)
-      unless [:ok, :bad_request, :unauthorized, :not_found, :internal_server_error].include?(status)
+      unless [:ok, :bad_request, :unauthorized, :not_found, :internal_server_error, :accepted].include?(status)
         raise "Invalid status: #{status}"
       end
       @meta_data = MessageDsl::Share::Meta.new(self, status)
